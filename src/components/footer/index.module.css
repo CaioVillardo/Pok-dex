@@ -1,10 +1,5 @@
 .footer {
     background-color: #192427;
-    height: 100%;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
 }
 
@@ -13,8 +8,7 @@
     position: absolute;
     left: 0%;
     right: 58.84%;
-    top: 4.55%;
-    bottom: 0%;
+    top: 92%;
     color: #212121;
     font-family: 'Karla';
     font-style: normal;
@@ -26,8 +20,7 @@
     position: absolute;
     width: 91px;
     right: 4.84%;
-    top: 4.55%;
-    bottom: 0%;
+    top: 92%;
     color: #212121;
     font-family: 'Karla';
     font-style: normal;

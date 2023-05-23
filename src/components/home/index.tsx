@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './index.module.css'
-import Pika from '../../../public/assets/images/BannerComplete.png';
+import Pika from '../../assets/images/BannerComplete.png';
+
 
 const Home: React.FC = () => {
     return (
-        <home className={styles.home}>
+        <div className={styles.home}>
             <div className={styles.banner}>
                 <div className={styles.banner}>
                     <h1 className={styles.titulo}>
@@ -18,7 +19,7 @@ const Home: React.FC = () => {
                     <img src={Pika} className={styles.pika}/>
                 </div>
             </div>
-        </home>
+        </div>
     );
 };
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './index.module.css'
+import Logo from '../../assets/images/logos/Logo.png';
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -8,7 +9,9 @@ const Navbar: React.FC = () => {
     }
 
     return (
-        <navbar className={styles.navbar}>
+        <div className={styles.navbar}>
+            <img src={Logo} alt="Logo" className={styles.logo}/>
+            
             <button
             className="navbar-toggler"
             type="button"
@@ -17,7 +20,7 @@ const Navbar: React.FC = () => {
             aria-expanded="true"
             aria-label="Toggle navigation"
             onClick={handleToggle}>
-            <span className="text-black">Home</span>    
+            <span className={styles.navbartext}>Home</span>    
             </button>
 
             <button
@@ -28,7 +31,7 @@ const Navbar: React.FC = () => {
             aria-expanded="true"
             aria-label="Toggle navigation"
             onClick={handleToggle}>
-            <span className="text-black">Pokédex</span>    
+            <span className={styles.navbartext}>Pokédex</span>    
             </button>
 
             <button
@@ -39,7 +42,7 @@ const Navbar: React.FC = () => {
             aria-expanded="true"
             aria-label="Toggle navigation"
             onClick={handleToggle}>
-            <span className="text-black">Legendaries</span>    
+            <span className={styles.navbartext}>Legendaries</span>    
             </button>
 
             <button
@@ -50,9 +53,9 @@ const Navbar: React.FC = () => {
             aria-expanded="true"
             aria-label="Toggle navigation"
             onClick={handleToggle}>
-            <span className="text-black">Documentation</span>    
+            <span className={styles.navbartext}>Documentation</span>    
             </button>
-        </navbar>
+        </div>
     );
 };
 
